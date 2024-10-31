@@ -1,0 +1,63 @@
+<% layout("layouts/boilerplate") %>
+<body>
+  <h1 style="margin-left: 10%">Edit this Listing</h1>
+  <br />
+  <div class="new_box">
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate >
+      <label for="title" class="labl">Title</label><br />
+      <input
+        type="text"
+        name="listing[title]"
+        class="inp"
+        placeholder="Enter title"
+        value="<%= listing.title %>"
+        required
+      /><br /><br />
+      <label for="description" class="labl">Description</label><br />
+      <textarea
+        name="listing[description]"
+        class="inp"
+        placeholder="Enter description"
+        required
+      >
+<%= listing.description %></textarea
+      ><br /><br />
+      <label for="Image" class="labl">Image URL</label><br />
+      <input
+        type="text"
+        name="listing[image]"
+        placeholder="Enter image URL"
+        class="inp"
+        value="<%= listing.image %>"
+      /><br /><br />
+      <label for="price" class="labl">Price</label><br />
+      <input
+        type="number"
+        name="listing[price]"
+        placeholder="Enter price"
+        class="inp"
+        value="<%= listing.price %>"
+        required
+      /><br /><br />
+      <label for="location" class="labl">Location</label><br />
+      <input
+        type="text"
+        name="listing[location]"
+        placeholder="Enter location"
+        class="inp"
+        required
+        value="<%= listing.location%>"
+      /><br /><br />
+      <label for="country" class="labl">Country</label><br />
+      <input
+        type="text"
+        name="listing[country]"
+        placeholder="Enter country"
+        class="inp"
+        value="<%= listing.country %>"
+        required
+      /><br /><br />
+      <button class="addme">Add</button>
+    </form>
+  </div>
+</body>
