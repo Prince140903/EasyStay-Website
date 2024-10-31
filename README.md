@@ -18,8 +18,13 @@ A simple hotel booking website built with Express, EJS, and JavaScript. This pro
 
 Project Structure:
 
-views/ - EJS templates for rendering pages
-public/ - Static files like CSS, JavaScript, and images
-routes/ - Express routes for handling requests
-app.js - Main application file
+- views/ - EJS templates for rendering pages
+- public/ - Static files like CSS, JavaScript, and images
+- routes/ - Express routes for handling requests
+- app.js - Main application file
 
+ ## Screenshots of Project
+
+  <img src="Screenshots/Screenshot.png" alt="Screenshot" width="800"/>
+  <img src="Screenshots/Screenshot-2.png" alt="Screenshot" width="800"/>
+  <img src="Screenshots/Screenshot-1.png" alt="Screenshot" width="800"/>
